@@ -9,5 +9,12 @@ TODO:
   - catch.hpp probably should end in an include directory, or in the test directory
   - The exampe test now can be run with this command (this should change to `make test`):
 
+    on linux / OSX:
+	    $> g++ -std=c++11 -Wall -o 010-TestCase 010-TestCase.cpp && ./010-TestCase
 
-	g++ -std=c++11 -Wall -o 010-TestCase 010-TestCase.cpp && ./010-TestCase
+    on Windows:
+	    $> g++ -std=c++11 -Wall -o 010-TestCase 010-TestCase.cpp
+      $> 010-TestCase.exe
+
+  - On cygwin probably runs like on linux or OSX
+
