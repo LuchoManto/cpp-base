@@ -1,11 +1,11 @@
-skip_tags: true
-  
+os:
+  - Visual Studio 2017  
 install:
-  - cinst --allow-empty-checksums mingw make
-#  - set PATH=C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
-  - cd C:\projects\%APPVEYOR_PROJECT_NAME%
-
+  - cinst --allow-empty-checksums -y mingw make
+  - refreshenv
 build_script:
+  - cd C:\projects\%APPVEYOR_PROJECT_NAME%
   - mkdir build
+test_script:
   - make test
   - .\test.exe
