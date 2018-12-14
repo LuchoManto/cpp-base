@@ -1,6 +1,8 @@
 # cpp-base
 Base directory / files for a cpp project
 
+[![Build Status](https://img.shields.io/appveyor/ci/dmanto/cpp-base/master.svg?logo=appveyor)](https://ci.appveyor.com/project/dmanto/cpp-base/branch/master)
+
 TODO:
   - define layouts and everything, including Makefile. Example: https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/
   - Tests should run with `make test`
