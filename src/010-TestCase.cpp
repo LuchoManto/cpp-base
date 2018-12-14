@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include "catch.hpp"
+#include "../include/catch.hpp"
 
 unsigned int Factorial(unsigned int number)
 {
