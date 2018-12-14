@@ -1,0 +1,11 @@
+skip_tags: true
+  
+install:
+  - cinst --allow-empty-checksums mingw make
+#  - set PATH=C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
+  - cd C:\projects\%APPVEYOR_PROJECT_NAME%
+
+build_script:
+  - mkdir build
+  - make test
+  - .\test.exe
