@@ -6,6 +6,7 @@ install:
 build_script:
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%
   - mkdir build
+  - mkdir bin
 test_script:
   - make test
   - .\test.exe
