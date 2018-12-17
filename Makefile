@@ -1,16 +1,29 @@
 BUILDDIR := build
 TARGET := bin/runner
+TEST := bin/test
+CFLAGS := -std=c++11 -Wall
+CXX := g++
+COO := $(CXX) -c
+BIN := bin
+DEPS := include/catch.hpp
+OBJS := build/010-TestCase.o
 
 
-test: bin/test
 
-bin/test: build/010-TestCase.o
-	@g++ -std=c++11 -Wall build/010-TestCase.o -o test
+test: $(BIN)/test
+	@./$(BIN)/test
 
-build/010-TestCase.o: src/010-TestCase.cpp include/catch.hpp
-	@g++ -c -std=c++11 -Wall src/010-TestCase.cpp -o build/010-TestCase.o
+$(BIN)/test: build/010-TestCase.o
+	@#mkdir $(BIN)
+	@$(CXX) $(CFLAGS) build/010-TestCase.o -o $(BIN)/test
+
+
+build/%.o: src/%.cpp $(DEPS)
+	@$(COO) -o $@ $< $(CFLAGS)
+
 
 clean :
-	rm -f *.o 
+	@rm -f build/*
 	
 .PHONY : clean
+
