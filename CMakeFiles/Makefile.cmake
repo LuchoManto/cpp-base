@@ -48,5 +48,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/runtest.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/hellosum.dir/DependInfo.cmake"
   )
