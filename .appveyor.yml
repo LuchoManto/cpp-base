@@ -1,3 +1,7 @@
+branches:
+  only:
+    - trycmake
+
 os:
   - Visual Studio 2017  
 install:
