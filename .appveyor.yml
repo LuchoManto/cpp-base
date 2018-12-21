@@ -7,6 +7,9 @@ build_script:
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%
   - mkdir build
   - mkdir bin
+  - cd build
+  - cmake --version
+  - cmake ..
 test_script:
+  - cd C:\projects\%APPVEYOR_PROJECT_NAME%
   - make test
-  - .\test.exe

@@ -4,18 +4,15 @@ project(cpp-base)
 # Use c++11
 set (CMAKE_CXX_STANDARD 11)
 
-#Bring the headers, such as Student.h into the project
-include_directories(include)
- 
-#Can manually add the sources using the set command as follows:
-#set(SOURCES src/main.cpp src/sum.cpp)
- 
-#However, the file(GLOB...) allows for wildcard additions:
+#source and include files
 file(GLOB SOURCES "src/*.cpp")
+include_directories(include) 
 
+#Main executable
 add_executable(hellosum ${SOURCES})
 
 
+#--- TESTING
 
 # Prepare "Catch" library for other executables
 set(CATCH_INCLUDE_DIR test/include)

@@ -1,5 +1,0 @@
-/Users/lucianomantovani/repos/cpp-base/CMakeFiles/edit_cache.dir
-/Users/lucianomantovani/repos/cpp-base/CMakeFiles/runtest.dir
-/Users/lucianomantovani/repos/cpp-base/CMakeFiles/rebuild_cache.dir
-/Users/lucianomantovani/repos/cpp-base/CMakeFiles/test.dir
-/Users/lucianomantovani/repos/cpp-base/CMakeFiles/hellosum.dir
