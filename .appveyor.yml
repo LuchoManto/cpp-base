@@ -8,7 +8,7 @@ build_script:
   - mkdir build
   - mkdir bin
   - cmake --version
-  - cmake .
+  - cmake . -G "NMake Makefiles"
 test_script:
-  - make
-  - make test
+  - nmake
+  - nmake test
