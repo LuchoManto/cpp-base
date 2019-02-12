@@ -6,6 +6,9 @@ install:
 build_script:
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%
   - mkdir build
+  - mkdir bin
+  - cmake --version
+  - cmake . -G "MinGW Makefiles"
 test_script:
+  - make
   - make test
-  - .\test.exe
